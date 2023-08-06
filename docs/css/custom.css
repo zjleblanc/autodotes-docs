@@ -1,0 +1,18 @@
+img.twemoji {
+    height: 1em;
+    width: auto;
+}
+
+p.search-hint {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 8px;
+}
+
+div.search-results {
+    margin-top: 0;
+}
+
+#content_search {
+    margin-top: 16px;
+}

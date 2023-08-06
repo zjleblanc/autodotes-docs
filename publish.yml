@@ -1,0 +1,26 @@
+---
+- name: Publish mkdocs site
+  hosts: proxy
+  become: true
+  gather_facts: false
+
+  handlers:
+    - name: Reload nginx
+      ansible.builtin.service:
+        name: nginx
+        state: reloaded
+
+  tasks:
+    - name: Build site
+      delegate_to: localhost
+      register: r_build
+      changed_when: r_build.rc == 0
+      ansible.builtin.command:
+        cmd: mkdocs build
+        chdir: "{{ playbook_dir }}"
+
+    - name: Copy site
+      notify: Reload nginx
+      ansible.posix.synchronize:
+        src: "{{ playbook_dir }}/site/"
+        dest: /var/www/docs.autodotes.com

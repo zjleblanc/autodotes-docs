@@ -1,0 +1,18 @@
+{% extends "main.html" %}
+
+{% block content %}
+
+  <h1 id="search">{% trans %}Search Results{% endtrans %}</h1>
+
+  <p class="search-hint">Not seeing what you expect? Trying using a wildcard at the end of your search, like this: <code>service*</code></p>
+
+  <form id="content_search" action="search.html">
+    <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+    <input name="q" id="mkdocs-search-query" type="text" class="search_input search-query ui-autocomplete-input" placeholder="{% trans %}Search the Docs{% endtrans %}" aria-label="{% trans %}Search the Docs{% endtrans %}" autocomplete="off" autofocus title="{% trans %}Type search term here{% endtrans %}">
+  </form>
+
+  <div id="mkdocs-search-results" class="search-results" data-no-results-text="{% trans %}No results found{% endtrans %}">
+    {% trans %}Searching...{% endtrans %}
+  </div>
+
+{% endblock %}

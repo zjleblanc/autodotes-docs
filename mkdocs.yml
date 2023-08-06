@@ -1,0 +1,25 @@
+site_name: Autodotes Knowledge Base
+site_url: https://docs.autodotes.com/
+site_description: Autodotes knowledge base articles
+site_author: Zachary LeBlanc
+theme: 
+  name: readthedocs
+  custom_dir: autodotes
+
+
+extra_css:
+  - css/custom.css
+  - css/clipboard.css
+extra_javascript:
+  - js/clipboard.js
+
+plugins:
+  - search
+
+markdown_extensions:
+  - attr_list
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:MaterialX.emoji.twemoji
+      emoji_generator: !!python/name:MaterialX.emoji.to_svg
