@@ -1,4 +1,7 @@
-# ServiceNow
+---
+title: ServiceNow
+---
+# ServiceNow <img src="/.icons/snow.png" class="credential-type-icon"> 
 
 The ServiceNow Credential configuration below is compatible with all [servicenow.itsm](https://github.com/ansible-collections/servicenow.itsm) modules.
 

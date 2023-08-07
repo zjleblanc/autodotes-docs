@@ -16,3 +16,10 @@ div.search-results {
 #content_search {
     margin-top: 16px;
 }
+
+img.credential-type-icon {
+    height: 1em; 
+    width: auto;
+    margin-left: 0.15em;
+    padding-bottom: .2em;
+}

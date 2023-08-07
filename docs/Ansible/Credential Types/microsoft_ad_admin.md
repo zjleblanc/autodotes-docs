@@ -1,4 +1,7 @@
-# Microsoft AD Admin
+---
+title: Microsoft AD Admin
+---
+# Microsoft AD Admin <img src="/.icons/windows.png" class="credential-type-icon">
 
 The Microsoft AD Admin configuration below is compatible with all [microsoft.ad](https://docs.ansible.com/ansible/latest/collections/community/general/index.html) modules. This credential will work with modules that require an administrator account **and** those that take an arbitrary user account.
 

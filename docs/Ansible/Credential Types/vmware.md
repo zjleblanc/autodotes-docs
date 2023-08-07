@@ -1,4 +1,7 @@
-# VMWare
+---
+title: VMWare
+---
+# VMWare <img src="/.icons/vmware.png" class="credential-type-icon">
 
 The VMWare configuration below is compatible with the [community.vmware](https://docs.ansible.com/ansible/latest/collections/community/vmware/index.html) collection and the [vmware.vmware_rest](https://console.redhat.com/ansible/automation-hub/repo/published/vmware/vmware_rest/) certified collection.
 
@@ -56,9 +59,9 @@ env:
 ```
 # Task to be included in a playbook
 - name: Create VMWare Credential Type
-    ansible.builtin.include_role:
+  ansible.builtin.include_role:
     name: infra.controller_configuration.credential_types
-    vars:
+  vars:
     controller_credential_types:
       - name:  VMWare Credential
         description:  VMWare credential for use with community.vmware collection
@@ -96,9 +99,6 @@ env:
             - vmware_host
             - vmware_user
             - vmware_password
-          required:
-            - rhsm_user
-            - rhsm_password
         injectors:
           env:
             VMWARE_HOST: '{{ vmware_host }}'
