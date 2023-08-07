@@ -1,8 +1,15 @@
-# AAP FAQs
+# AAP FAQs <!-- omit in toc -->
 
 Frequently asked customer questions regarding Ansible Automation Platform (AAP)
 
-[TOC]
+- [Collection Install SSL Error](#collection-install-ssl-error)
+  - [Problem](#problem)
+  - [Solution](#solution)
+- [Cannot Retrieve Subscription](#cannot-retrieve-subscription)
+  - [Problem](#problem-1)
+  - [Investigate](#investigate)
+  - [Solution](#solution-1)
+
 
 ## Collection Install SSL Error
 

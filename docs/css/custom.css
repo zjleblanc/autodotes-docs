@@ -23,3 +23,37 @@ img.credential-type-icon {
     margin-left: 0.15em;
     padding-bottom: .2em;
 }
+
+/* COLOR THEMING */
+
+div.wy-side-nav-search {
+    background-color: #002d62;
+}
+
+.wy-menu-vertical ul.current [class^="toctree-"] button.toctree-expand {
+    color: #9e1717;
+    height: 1.25em;
+}
+
+.wy-menu-vertical ul.current .toctree-l1[aria-expanded="false"] button.toctree-expand {
+    color: #ff7d7d;
+}
+
+.wy-menu-vertical header,
+.wy-menu-vertical p.caption {
+    color: #819fc2;
+}
+
+/* ADMONITION THEMING */
+.rst-content .note {
+    background-color: #f6f3e8;
+}
+.rst-content .note .admonition-title {
+    background-color: #e2c044;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.rst-content .admonition>:last-child {
+    font-size: 14px;
+}

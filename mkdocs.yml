@@ -18,8 +18,7 @@ plugins:
 
 markdown_extensions:
   - attr_list
-  - toc:
-      permalink: true
+  - admonition
   - pymdownx.emoji:
       emoji_index: !!python/name:MaterialX.emoji.twemoji
       emoji_generator: !!python/name:MaterialX.emoji.to_svg
