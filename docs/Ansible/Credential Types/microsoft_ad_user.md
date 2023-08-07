@@ -75,7 +75,7 @@ extra_vars:
             - domain_password
         injectors:
           extra_vars:
-            domain_user: "{{ domain_user }}"
-            domain_password: "{{ domain_password }}"
-            domain_server: "{{ domain_server }}"
+            domain_user: unsafe! "{{ domain_user }}"
+            domain_password: unsafe! "{{ domain_password }}"
+            domain_server: unsafe! "{{ domain_server }}"
 ```

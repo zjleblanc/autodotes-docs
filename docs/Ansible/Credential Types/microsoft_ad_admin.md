@@ -46,13 +46,13 @@ extra_vars:
 
 ```
 # Task to be included in a playbook
-- name: Create  Microsoft AD User Credential Type
+- name: Create  Microsoft AD Admin Credential Type
   ansible.builtin.include_role:
     name: infra.controller_configuration.credential_types
   vars:
     controller_credential_types:
-      - name:  Microsoft AD User Credential
-        description:  Microsoft AD User credential for use with microsoft.ad collection
+      - name:  Microsoft AD Admin Credential
+        description:  Microsoft AD Admin credential for use with microsoft.ad collection
         inputs:
           fields:
             - id: dns_domain_name
@@ -78,10 +78,10 @@ extra_vars:
             - domain_admin_password
         injectors:
           extra_vars:
-            dns_domain_name: "{{ dns_domain_name }}"
-            domain_admin_user: "{{ domain_admin_user }}"
-            domain_admin_password: "{{ domain_admin_password }}"
-            domain_username: "{{ domain_admin_user }}"
-            domain_password: "{{ domain_admin_password }}"
-            local_admin_password: "{{ local_admin_password }}"
+            dns_domain_name: unsafe! "{{ dns_domain_name }}"
+            domain_admin_user: unsafe! "{{ domain_admin_user }}"
+            domain_admin_password: unsafe! "{{ domain_admin_password }}"
+            domain_username: unsafe! "{{ domain_admin_user }}"
+            domain_password: unsafe! "{{ domain_admin_password }}"
+            local_admin_password: unsafe! "{{ local_admin_password }}"
 ```

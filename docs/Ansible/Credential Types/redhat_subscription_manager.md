@@ -52,6 +52,6 @@ extra_vars:
             - rhsm_password
         injectors:
           extra_vars:
-            rhsm_user: "{{ rhsm_user }}"
-            rhsm_password: "{{ rhsm_password }}"
+            rhsm_user: unsafe! "{{ rhsm_user }}"
+            rhsm_password: unsafe! "{{ rhsm_password }}"
 ```

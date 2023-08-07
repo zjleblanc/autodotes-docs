@@ -1,3 +1,7 @@
+div.wy-nav-content {
+    max-width: 60vw;
+}
+
 img.twemoji {
     height: 1em;
     width: auto;
