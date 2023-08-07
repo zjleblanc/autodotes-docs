@@ -1,7 +1,7 @@
 ---
 title: VMWare
 ---
-# VMWare <img src="/.icons/vmware.png" class="credential-type-icon">
+# VMWare <img src="/icons/vmware.png" class="credential-type-icon">
 
 The VMWare configuration below is compatible with the [community.vmware](https://docs.ansible.com/ansible/latest/collections/community/vmware/index.html) collection and the [vmware.vmware_rest](https://console.redhat.com/ansible/automation-hub/repo/published/vmware/vmware_rest/) certified collection.
 

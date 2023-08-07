@@ -1,7 +1,7 @@
 ---
 title: RedHat Subscription Manager
 ---
-# RedHat Subscription Manager <img src="/.icons/redhat.png" class="credential-type-icon">
+# RedHat Subscription Manager <img src="/icons/redhat.png" class="credential-type-icon">
 
 The RedHat Subscription Manager configuration below is compatible with the [community.general.redhat_subscription](https://docs.ansible.com/ansible/latest/collections/community/general/redhat_subscription_module.html#ansible-collections-community-general-redhat-subscription-module) module.
 
