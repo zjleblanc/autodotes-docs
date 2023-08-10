@@ -32,12 +32,6 @@ fields:
       - kerberos
       - negotiate
       - ntlm
-  - id: ldap_tls_mode
-    type: string
-    label: LDAP TLS Mode
-    choices:
-      - ldaps
-      - start_tls
   - id: ldap_cert_validation
     type: string
     label: LDAP Cert Validation
@@ -75,7 +69,6 @@ env:
   MICROSOFT_AD_LDAP_USERNAME: "{{ ldap_username }}"
   MICROSOFT_AD_LDAP_PASSWORD: "{{ ldap_password }}"
   MICROSOFT_AD_LDAP_AUTH_PROTOCOL: "{{ ldap_auth_protocol | default('negotiate', true) }}"
-  MICROSOFT_AD_LDAP_TLS_MODE: "{{ ldap_tls_mode | default(omit, true) }}"
   MICROSOFT_AD_LDAP_CERT_VALIDATION: "{{ ldap_cert_validation }}"
   MICROSOFT_AD_LDAP_CA_CERT: "{{ ldap_ca_cert }}"
   MICROSOFT_AD_LDAP_CERTIFICATE: "{{ ldap_certificate }}"

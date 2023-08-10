@@ -1,14 +1,17 @@
+---
+title: AAP FAQs
+---
 # AAP FAQs <!-- omit in toc -->
 
 Frequently asked customer questions regarding Ansible Automation Platform (AAP)
 
 - [Collection Install SSL Error](#collection-install-ssl-error)
-  - [Problem](#problem)
-  - [Solution](#solution)
+	- [Problem](#problem)
+	- [Solution](#solution)
 - [Cannot Retrieve Subscription](#cannot-retrieve-subscription)
-  - [Problem](#problem-1)
-  - [Investigate](#investigate)
-  - [Solution](#solution-1)
+	- [Problem](#problem-1)
+	- [Investigate](#investigate)
+	- [Solution](#solution-1)
 
 
 ## Collection Install SSL Error
@@ -29,7 +32,7 @@ Depending on the root cause, this may fix your issue:
 - update your Private Automation Hub certificate (if that is your target)
 - use the option to bypass cert validation `--ignore-certs`
 - make sure the user can has read permissions on the cert store
-    - error should print location, if not look at `/etc/pki/tls/certs`
+		- error should print location, if not look at `/etc/pki/tls/certs`
 
 ## Cannot Retrieve Subscription
 
@@ -43,9 +46,9 @@ In the controller UI, when attempting to attach a subscription using Red Hat or 
 
 1.  Is the customer using the correct username and password?
 2.  Check the rhsm config at `/etc/rhsm/rhsm.conf` on the control node:
-    - If the \[server\] hostname attribute contains **subscription.rhsm.redhat.com**, then it will use Red Hat customer portal auth flow
-    - If not, then it will attempt to get subs from satellite
-    - [See source code](https://github.com/ansible/awx/blob/ac6a82eee41feb041ff3e4d16459d4b1a774175f/awx/main/utils/licensing.py)
+		- If the \[server\] hostname attribute contains **subscription.rhsm.redhat.com**, then it will use Red Hat customer portal auth flow
+		- If not, then it will attempt to get subs from satellite
+		- [See source code](https://github.com/ansible/awx/blob/ac6a82eee41feb041ff3e4d16459d4b1a774175f/awx/main/utils/licensing.py)
 
 ### Solution
 

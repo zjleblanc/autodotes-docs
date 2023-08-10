@@ -1,11 +1,14 @@
+---
+title: Common Installation Issues
+---
 # Common Installation Issues <!-- omit in toc -->
 
 - [Elevated Privileges](#elevated-privileges)
 - [Locale utf-8](#locale-utf-8)
 - [Inventory FQDNs](#inventory-fqdns)
 - [Custom Certs](#custom-certs)
-  - [Controller (formerly Tower)](#controller-formerly-tower)
-  - [Automation Hub](#automation-hub)
+	- [Controller (formerly Tower)](#controller-formerly-tower)
+	- [Automation Hub](#automation-hub)
 
 ## Elevated Privileges
 
