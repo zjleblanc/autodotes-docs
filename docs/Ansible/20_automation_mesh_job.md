@@ -4,7 +4,9 @@ I found myself debugging a very specific issue with a job running on AAP 2.2 usi
 
 ## How is the execution node chosen?
 
-For a non-containerized environment, the instance group will determine the execution node which will receive the job. If you have multiple nodes in the instance group, the scheduler algorithm will pick one. To troubleshoot job execution specifics, I recommend isolating a particular execution node by disabling all but on in the group.
+For a non-containerized environment, the instance group will determine the execution node which will receive the job. If you have multiple nodes in the instance group, the scheduler algorithm will pick one. To troubleshoot job execution specifics, I recommend isolating a particular execution node by disabling all but one in the group.
+
+![One Instance Only](.attachments/one_instance_only.png)
 
 ## Connect to the execution node
 
