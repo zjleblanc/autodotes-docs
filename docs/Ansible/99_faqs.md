@@ -94,12 +94,15 @@ Learn more about [HTTP_X_FORWARDED_FOR](https://developer.mozilla.org/en-US/docs
 Trying to build an execution-environment and build process consistently fails when install rpms from `cdn-ubi.redhat.com`. The full error looks something like the snippet below:
 
 ```
-error: cannot update repo 'ubi-8-baseos-rpms': Cannot download repomd.xml: Cannot download repodata/repomd.xml: All mirrors were tried; Last error: Curl error (60): Peer certificate cannot be authenticated with given CA certificates for https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/repodata/repomd.xml [SSL certificate problem: self signed certificate in certificate chain]
+error: cannot update repo 'ubi-8-baseos-rpms': Cannot download repomd.xml: Cannot download repodata/repomd.xml: 
+All mirrors were tried; Last error: Curl error (60): Peer certificate cannot be authenticated with given CA certificates 
+for https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi8/8/x86_64/baseos/os/repodata/repomd.xml 
+[SSL certificate problem: self signed certificate in certificate chain]
 ```
 
 ### Solution
 
-If you are running trying to build an execution environment on a node that sits behind a proxy, it is likely that your proxy is intercepting the traffic to do an inspection and presenting it's own certificate. The execution environment receives the certificate which does not indicate a valid CA; therefore, the dnf command fails. There are two paths to resolve this issue:
+If you are trying to build an execution environment on a node that sits behind a proxy, it is likely that your proxy is intercepting the traffic to do an inspection and presenting it's own certificate. The execution environment receives the certificate which does not indicate a valid CA; therefore, the dnf command fails. There are two paths to resolve this issue:
 
 1. Add a rule in your proxy to allow traffic to the destination `cdn-ubi.redhat.com`.
-1. Copy the proxy's certificate pem to `/etc/pki/ca-trust/source/anchors` and run `update-ca-trust` during the build process
+2. Copy the proxy's certificate pem to `/etc/pki/ca-trust/source/anchors` and run `update-ca-trust` during the build process
