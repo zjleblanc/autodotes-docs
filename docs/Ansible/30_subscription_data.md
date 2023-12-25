@@ -1,4 +1,7 @@
-# Getting Subscription Data
+---
+title: Getting Subscription Data
+---
+# Getting Subscription Data <!-- omit in toc -->
 
 Ansible Automation Platform provides a configuration endpoint for retrieving usage data as it relates to your subscription. To pull this data (assuming you have permission), use the following endpoint:
 

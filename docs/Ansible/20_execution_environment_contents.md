@@ -5,6 +5,16 @@ title: Execution Environment Contents
 
 Refer to the tables below to understand what contents are available in the Red Hat provided execution environments.
 
+- [aap-2.4/ee-supported-rhel8](#aap-24ee-supported-rhel8)
+  - [collections](#collections)
+  - [python](#python)
+  - [system packages](#system-packages)
+- [aap-2.4/ee-minimal-rhel8](#aap-24ee-minimal-rhel8)
+  - [collections](#collections-1)
+  - [python](#python-1)
+  - [system packages](#system-packages-1)
+
+
 ## aap-2.4/ee-supported-rhel8
 
 ### collections

@@ -22,6 +22,7 @@ plugins:
 markdown_extensions:
   - attr_list
   - admonition
+  - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:MaterialX.emoji.twemoji
       emoji_generator: !!python/name:MaterialX.emoji.to_svg

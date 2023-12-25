@@ -61,3 +61,30 @@ div.wy-side-nav-search {
 .rst-content .admonition>:last-child {
     font-size: 14px;
 }
+
+details.seealso.coll-plugin-details {
+    margin: 6px 0px;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #eef8f8;
+}
+
+details.seealso.coll-plugin-details h4 {
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+details.seealso.coll-plugin-details h4,
+details.seealso.coll-plugin-details p,
+details.seealso.coll-plugin-details div.wy-table-responsive {
+    padding: 0px 12px;
+}
+
+details.seealso.coll-plugin-details table.docutils:not(.field-list) tr:nth-child(odd) th,
+details.seealso.coll-plugin-details table.docutils:not(.field-list) tr:nth-child(even) td {
+    background: whitesmoke;
+}
+
+details.seealso.coll-plugin-details table.docutils:not(.field-list) tr:nth-child(odd) td {
+    background: rgb(240, 240, 240);
+}
