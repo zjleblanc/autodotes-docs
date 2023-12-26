@@ -1,7 +1,7 @@
 ---
 title: The Movie Database (TMDB)
 ---
-# The Movie Database (TMDB) <img src="/icons/smtp.png" class="credential-type-icon"> 
+# The Movie Database (TMDB) <img src="/icons/tmdb.png" class="credential-type-icon"> 
 
 The Movie Database Credential configuration below is intended for use with the [zjleblanc.tmdb](https://github.com/zjleblanc/zjleblanc.tmdb/blob/master/README.md) collection.
 
