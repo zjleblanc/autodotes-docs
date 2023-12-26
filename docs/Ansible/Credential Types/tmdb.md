@@ -44,6 +44,12 @@ extra_vars:
   tmdb_username: '{{ tmdb_username }}'
   tmdb_password: '{{ tmdb_password }}'
   tmdb_account_id: '{{ tmdb_account_id }}'
+env:
+  TMDB_API: '{{ tmdb_api_url }}'
+  TMDB_API_KEY: '{{ tmdb_api_key }}'
+  TMDB_USERNAME: '{{ tmdb_username }}'
+  TMDB_PASSWORD: '{{ tmdb_password }}'
+  TMDB_ACCOUNT_ID: '{{ tmdb_account_id }}'
 ```
 
 ## Deploy with Controller Configuration
@@ -92,4 +98,10 @@ extra_vars:
             tmdb_username: unsafe! "{{ tmdb_username }}"
             tmdb_password: unsafe! "{{ tmdb_password }}"
             tmdb_account_id: unsafe! "{{ tmdb_account_id }}"
+          env:
+            TMDB_API: unsafe! "{{ tmdb_api_url }}"
+            TMDB_API_KEY: unsafe! "{{ tmdb_api_key }}"
+            TMDB_USERNAME: unsafe! "{{ tmdb_username }}"
+            TMDB_PASSWORD: unsafe! "{{ tmdb_password }}"
+            TMDB_ACCOUNT_ID: unsafe! "{{ tmdb_account_id }}"
 ```
