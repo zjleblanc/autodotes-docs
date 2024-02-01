@@ -74,9 +74,9 @@ env:
             - vault_addr
         injectors:
           env:
-            VAULT_ADDR: unsafe! '{{ vault_addr }}'
-            VAULT_NAMESPACE: unsafe! '{{ vault_namespace }}'
-            VAULT_TOKEN: unsafe! '{{ vault_token }}'
-            VAULT_CACERT: unsafe! '{{ vault_ca_cert }}'
-            VAULT_SKIP_VERIFY: unsafe! '{{ vault_skip_verify }}'
+            VAULT_ADDR: !unsafe '{{ vault_addr }}'
+            VAULT_NAMESPACE: !unsafe '{{ vault_namespace }}'
+            VAULT_TOKEN: !unsafe '{{ vault_token }}'
+            VAULT_CACERT: !unsafe '{{ vault_ca_cert }}'
+            VAULT_SKIP_VERIFY: !unsafe '{{ vault_skip_verify }}'
 ```

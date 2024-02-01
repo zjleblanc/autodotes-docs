@@ -115,11 +115,11 @@ extra_vars:
             - pgsql_login_password
         injectors:
           extra_vars:
-            login_host: unsafe! '{{ pgsql_login_host }}'
-            login_user: unsafe! '{{ pgsql_login_user }}'
-            login_password: unsafe! '{{ pgsql_login_password }}'
-            login_port: unsafe! '{{ pgsql_port }}'
-            ssl_cert: unsafe! '{{ pgsql_ssl_cert }}'
-            ssl_key: unsafe! '{{ pgsql_ssl_key }}'
-            ssl_mode: unsafe! '{{ pgsql_ssl_mode }}'
+            login_host: !unsafe '{{ pgsql_login_host }}'
+            login_user: !unsafe '{{ pgsql_login_user }}'
+            login_password: !unsafe '{{ pgsql_login_password }}'
+            login_port: !unsafe '{{ pgsql_port }}'
+            ssl_cert: !unsafe '{{ pgsql_ssl_cert }}'
+            ssl_key: !unsafe '{{ pgsql_ssl_key }}'
+            ssl_mode: !unsafe '{{ pgsql_ssl_mode }}'
 ```

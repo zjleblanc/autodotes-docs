@@ -87,11 +87,11 @@ extra_vars:
             - email_smtp_password
         injectors:
           extra_vars:
-            email_smtp_server: unsafe! "{{ email_smtp_server }}"
-            email_smtp_password: unsafe! "{{ email_smtp_password }}"
-            email_smtp_username: unsafe! "{{ email_smtp_username }}"
-            email_smtp_server_port: unsafe! "{{ email_smtp_server_port }}"
-            email_smtp_from_address: unsafe! "{{ email_smtp_from_address }}"
+            email_smtp_server: !unsafe "{{ email_smtp_server }}"
+            email_smtp_password: !unsafe "{{ email_smtp_password }}"
+            email_smtp_username: !unsafe "{{ email_smtp_username }}"
+            email_smtp_server_port: !unsafe "{{ email_smtp_server_port }}"
+            email_smtp_from_address: !unsafe "{{ email_smtp_from_address }}"
 ```
 
 ## Example Usage

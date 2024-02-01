@@ -78,10 +78,10 @@ extra_vars:
             - domain_admin_password
         injectors:
           extra_vars:
-            dns_domain_name: unsafe! "{{ dns_domain_name }}"
-            domain_admin_user: unsafe! "{{ domain_admin_user }}"
-            domain_admin_password: unsafe! "{{ domain_admin_password }}"
-            domain_username: unsafe! "{{ domain_admin_user }}"
-            domain_password: unsafe! "{{ domain_admin_password }}"
-            local_admin_password: unsafe! "{{ local_admin_password }}"
+            dns_domain_name: !unsafe "{{ dns_domain_name }}"
+            domain_admin_user: !unsafe "{{ domain_admin_user }}"
+            domain_admin_password: !unsafe "{{ domain_admin_password }}"
+            domain_username: !unsafe "{{ domain_admin_user }}"
+            domain_password: !unsafe "{{ domain_admin_password }}"
+            local_admin_password: !unsafe "{{ local_admin_password }}"
 ```

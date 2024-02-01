@@ -80,9 +80,9 @@ extra_vars:
             - pve_api_token_secret
         injectors:
           extra_vars:
-            proxmox_api_host: unsafe! "{{ pve_api_host }}"
-            proxmox_api_user: unsafe! "{{ pve_api_user }}"
-            proxmox_api_password: unsafe! "{{ pve_api_password }}"
-            proxmox_api_token_id: unsafe! "{{ pve_api_token_id }}"
-            proxmox_api_token_secret: unsafe! "{{ pve_api_token_secret }}"
+            proxmox_api_host: !unsafe "{{ pve_api_host }}"
+            proxmox_api_user: !unsafe "{{ pve_api_user }}"
+            proxmox_api_password: !unsafe "{{ pve_api_password }}"
+            proxmox_api_token_id: !unsafe "{{ pve_api_token_id }}"
+            proxmox_api_token_secret: !unsafe "{{ pve_api_token_secret }}"
 ```

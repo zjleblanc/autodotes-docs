@@ -93,15 +93,15 @@ env:
             - tmdb_password
         injectors:
           extra_vars:
-            tmdb_api_url: unsafe! "{{ tmdb_api_url }}"
-            tmdb_api_key: unsafe! "{{ tmdb_api_key }}"
-            tmdb_username: unsafe! "{{ tmdb_username }}"
-            tmdb_password: unsafe! "{{ tmdb_password }}"
-            tmdb_account_id: unsafe! "{{ tmdb_account_id }}"
+            tmdb_api_url: !unsafe "{{ tmdb_api_url }}"
+            tmdb_api_key: !unsafe "{{ tmdb_api_key }}"
+            tmdb_username: !unsafe "{{ tmdb_username }}"
+            tmdb_password: !unsafe "{{ tmdb_password }}"
+            tmdb_account_id: !unsafe "{{ tmdb_account_id }}"
           env:
-            TMDB_API: unsafe! "{{ tmdb_api_url }}"
-            TMDB_API_KEY: unsafe! "{{ tmdb_api_key }}"
-            TMDB_USERNAME: unsafe! "{{ tmdb_username }}"
-            TMDB_PASSWORD: unsafe! "{{ tmdb_password }}"
-            TMDB_ACCOUNT_ID: unsafe! "{{ tmdb_account_id }}"
+            TMDB_API: !unsafe "{{ tmdb_api_url }}"
+            TMDB_API_KEY: !unsafe "{{ tmdb_api_key }}"
+            TMDB_USERNAME: !unsafe "{{ tmdb_username }}"
+            TMDB_PASSWORD: !unsafe "{{ tmdb_password }}"
+            TMDB_ACCOUNT_ID: !unsafe "{{ tmdb_account_id }}"
 ```

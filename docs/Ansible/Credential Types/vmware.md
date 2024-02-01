@@ -101,11 +101,11 @@ env:
             - vmware_password
         injectors:
           env:
-            VMWARE_HOST: unsafe! '{{ vmware_host }}'
-            VMWARE_PORT: unsafe! '{{ vmware_port }}'
-            VMWARE_USER: unsafe! '{{ vmware_user }}'
-            VMWARE_PASSWORD: unsafe! '{{ vmware_password }}'
-            VMWARE_VALIDATE_CERTS: unsafe! '{{ vmware_validate_certs }}'
-            VMWARE_PROXY_HOST: unsafe! '{{ vmware_proxy_host }}'
-            VMWARE_PROXY_PORT: unsafe! '{{ vmware_proxy_port }}'
+            VMWARE_HOST: !unsafe '{{ vmware_host }}'
+            VMWARE_PORT: !unsafe '{{ vmware_port }}'
+            VMWARE_USER: !unsafe '{{ vmware_user }}'
+            VMWARE_PASSWORD: !unsafe '{{ vmware_password }}'
+            VMWARE_VALIDATE_CERTS: !unsafe '{{ vmware_validate_certs }}'
+            VMWARE_PROXY_HOST: !unsafe '{{ vmware_proxy_host }}'
+            VMWARE_PROXY_PORT: !unsafe '{{ vmware_proxy_port }}'
 ```

@@ -142,14 +142,14 @@ env:
             - ldap_server
         injectors:
           env:
-            MICROSOFT_AD_LDAP_SERVER: unsafe! "{{ ldap_server }}"
-            MICROSOFT_AD_LDAP_PORT: unsafe! "{{ ldap_port | default('389') }}"
-            MICROSOFT_AD_LDAP_USERNAME: unsafe! "{{ ldap_username }}"
-            MICROSOFT_AD_LDAP_PASSWORD: unsafe! "{{ ldap_password }}"
-            MICROSOFT_AD_LDAP_AUTH_PROTOCOL: unsafe! "{{ ldap_auth_protocol | default('negotiate', true) }}"
-            MICROSOFT_AD_LDAP_CERT_VALIDATION: unsafe! "{{ ldap_cert_validation }}"
-            MICROSOFT_AD_LDAP_CA_CERT: unsafe! "{{ ldap_ca_cert }}"
-            MICROSOFT_AD_LDAP_CERTIFICATE: unsafe! "{{ ldap_certificate }}"
-            MICROSOFT_AD_LDAP_CERTIFICATE_KEY: unsafe! "{{ ldap_certificate_key }}"
-            MICROSOFT_AD_LDAP_CERTIFICATE_PASSWORD: unsafe! "{{ ldap_certificate_password }}"
+            MICROSOFT_AD_LDAP_SERVER: !unsafe "{{ ldap_server }}"
+            MICROSOFT_AD_LDAP_PORT: !unsafe "{{ ldap_port | default('389') }}"
+            MICROSOFT_AD_LDAP_USERNAME: !unsafe "{{ ldap_username }}"
+            MICROSOFT_AD_LDAP_PASSWORD: !unsafe "{{ ldap_password }}"
+            MICROSOFT_AD_LDAP_AUTH_PROTOCOL: !unsafe "{{ ldap_auth_protocol | default('negotiate', true) }}"
+            MICROSOFT_AD_LDAP_CERT_VALIDATION: !unsafe "{{ ldap_cert_validation }}"
+            MICROSOFT_AD_LDAP_CA_CERT: !unsafe "{{ ldap_ca_cert }}"
+            MICROSOFT_AD_LDAP_CERTIFICATE: !unsafe "{{ ldap_certificate }}"
+            MICROSOFT_AD_LDAP_CERTIFICATE_KEY: !unsafe "{{ ldap_certificate_key }}"
+            MICROSOFT_AD_LDAP_CERTIFICATE_PASSWORD: !unsafe "{{ ldap_certificate_password }}"
 ```
