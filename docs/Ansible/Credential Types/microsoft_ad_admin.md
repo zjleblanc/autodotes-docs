@@ -56,22 +56,22 @@ extra_vars:
         inputs:
           fields:
             - id: dns_domain_name
-                type: string
-                label: DNS Domain Name
-                help_text: When state=domain, this is the DNS name of the domain to which the targeted Windows host should be joined.
+              type: string
+              label: DNS Domain Name
+              help_text: When state=domain, this is the DNS name of the domain to which the targeted Windows host should be joined.
             - id: domain_admin_user
-                type: string
-                label: Domain Admin User
-                help_text: Username of a domain admin for the target domain (required to join or leave the domain).
+              type: string
+              label: Domain Admin User
+              help_text: Username of a domain admin for the target domain (required to join or leave the domain).
             - id: domain_admin_password
-                type: string
-                label: Domain Admin Password
-                secret: true
+              type: string
+              label: Domain Admin Password
+              secret: true
             - id: local_admin_password
-                type: string
-                label: Local Admin Password
-                help_text: Password to be assigned to the local Administrator user (required when state=member_server).
-                secret: true
+              type: string
+              label: Local Admin Password
+              help_text: Password to be assigned to the local Administrator user (required when state=member_server).
+              secret: true
           required:
             - dns_domain_name
             - domain_admin_user

@@ -55,22 +55,22 @@ env:
         inputs:
           fields:
             - id: snow_host
-                type: string
-                label: ServiceNow Host
+              type: string
+              label: ServiceNow Host
             - id: snow_user
-                type: string
-                label: ServiceNow User
+              type: string
+              label: ServiceNow User
             - id: snow_password
-                type: string
-                label: ServiceNow User"s Password
-                secret: true
+              type: string
+              label: ServiceNow User"s Password
+              secret: true
             - id: snow_client_id
-                type: string
-                label: ServiceNow Client Id
+              type: string
+              label: ServiceNow Client Id
             - id: snow_client_secret
-                type: string
-                label: ServiceNow Client Secret
-                secret: true
+              type: string
+              label: ServiceNow Client Secret
+              secret: true
           required:
             - snow_host
             - snow_user

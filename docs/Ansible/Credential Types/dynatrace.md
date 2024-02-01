@@ -46,15 +46,15 @@ env:
         inputs:
           fields:
             - id: dynatrace_host
-                type: string
-                label: Dynatrace Host
+              type: string
+              label: Dynatrace Host
             - id: dynatrace_client_id
-                type: string
-                label: Dynatrace Client Id
+              type: string
+              label: Dynatrace Client Id
             - id: dynatrace_client_secret
-                type: string
-                label: Dynatrace Client Secret
-                secret: true
+              type: string
+              label: Dynatrace Client Secret
+              secret: true
           required:
             - dynatrace_host
             - dynatrace_client_id

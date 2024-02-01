@@ -41,12 +41,12 @@ extra_vars:
         inputs:
           fields:
             - id: rhsm_user
-                type: string
-                label: RHSM Username
+              type: string
+              label: RHSM Username
             - id: rhsm_password
-                type: string
-                label: RHSM Password
-                secret: true
+              type: string
+              label: RHSM Password
+              secret: true
           required:
             - rhsm_user
             - rhsm_password

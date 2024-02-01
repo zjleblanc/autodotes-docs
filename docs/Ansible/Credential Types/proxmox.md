@@ -57,22 +57,22 @@ extra_vars:
         inputs:
           fields:
             - id: pve_api_host
-                type: string
-                label: PVE API Host
+              type: string
+              label: PVE API Host
             - id: pve_api_user
-                type: string
-                label: PVE API User
+              type: string
+              label: PVE API User
             - id: pve_api_token_id
-                type: string
-                label: PVE API Token Id
+              type: string
+              label: PVE API Token Id
             - id: pve_api_token_secret
-                type: string
-                label: PVE API Token Secret
-                secret: true
+              type: string
+              label: PVE API Token Secret
+              secret: true
             - id: pve_api_password
-                type: string
-                label: PVE API Password
-                secret: true
+              type: string
+              label: PVE API Password
+              secret: true
           required:
             - pve_api_host
             - pve_api_user

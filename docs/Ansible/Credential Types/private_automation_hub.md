@@ -41,7 +41,7 @@ env:
     name: infra.controller_configuration.credential_types
   vars:
     controller_credential_types:
-      - name: ServiceNow Credential
+      - name: Private Automation Hub Credential
         description: Private Automation Hub credential for use with servicenow.itsm collection
         inputs:
           fields:
