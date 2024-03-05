@@ -1,7 +1,7 @@
 ---
 title: EE Utilities
 ---
-# EE Utilities <img src="/icons/ansible.png" class="credential-type-icon"> 
+# EE Utilities <img src="/icons/ansible.png" class="title-icon"> 
 
 The EE Utilities Credential configuration below is compatible with [infra.ee_utilities](https://github.com/redhat-cop/ee_utilities/) modules.
 

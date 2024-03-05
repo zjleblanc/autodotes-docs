@@ -1,7 +1,7 @@
 ---
 title: Postgresql
 ---
-# Postgresql <img src="/icons/pgsql.png" class="credential-type-icon">
+# Postgresql <img src="/icons/pgsql.png" class="title-icon">
 
 The Postgresql configuration below is compatible with the [community.postgresql](https://docs.ansible.com/ansible/latest/collections/community/postgresql/index.html) collection.
 

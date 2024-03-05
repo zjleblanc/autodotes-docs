@@ -9,8 +9,7 @@ theme:
   name: readthedocs
   custom_dir: autodotes
 
-
-extra_css:
+extra_css: 
   - css/custom.css
   - css/clipboard.css
 extra_javascript:

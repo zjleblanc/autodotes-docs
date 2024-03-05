@@ -1,7 +1,7 @@
 ---
 title: SMTP Server
 ---
-# SMTP Server <img src="/icons/smtp.png" class="credential-type-icon"> 
+# SMTP Server <img src="/icons/smtp.png" class="title-icon"> 
 
 The SMTP Server Credential configuration below is intended for use with the [ansible.builtin.mail](https://docs.ansible.com/ansible/latest/collections/community/general/mail_module.html) module.
 

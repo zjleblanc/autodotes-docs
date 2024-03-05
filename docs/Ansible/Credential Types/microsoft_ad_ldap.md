@@ -1,7 +1,7 @@
 ---
 title: Microsoft AD LDAP
 ---
-# Microsoft AD LDAP <img src="/icons/windows.png" class="credential-type-icon">
+# Microsoft AD LDAP <img src="/icons/windows.png" class="title-icon">
 
 The Microsoft AD LDAP configuration below is compatible with all [microsoft.ad.ldap](https://docs.ansible.com/ansible/latest/collections/microsoft/ad/ldap_inventory.html) inventory plugin.
 

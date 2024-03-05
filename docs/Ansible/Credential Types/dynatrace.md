@@ -1,7 +1,7 @@
 ---
 title: Dynatrace
 ---
-# Dynatrace <img src="/icons/dynatrace.png" class="credential-type-icon"> 
+# Dynatrace <img src="/icons/dynatrace.png" class="title-icon"> 
 
 The Dynatrace Credential configuration below is used for integrating with the Dynatrace API.
 

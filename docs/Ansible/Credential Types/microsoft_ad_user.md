@@ -1,7 +1,7 @@
 ---
 title: Microsoft AD User
 ---
-# Microsoft AD User <img src="/icons/windows.png" class="credential-type-icon">
+# Microsoft AD User <img src="/icons/windows.png" class="title-icon">
 
 The Microsoft AD User configuration below is compatible with all [microsoft.ad](https://docs.ansible.com/ansible/latest/collections/community/general/index.html) modules that do not require an Administrator credential.
 

@@ -1,7 +1,7 @@
 ---
 title: HashiCorp Vault
 ---
-# HashiCorp Vault <img src="/icons/hashi.png" class="credential-type-icon">
+# HashiCorp Vault <img src="/icons/hashi.png" class="title-icon">
 
 The HashiCorp Vault Credential configuration below is compatible with the [community.hashi_vault](https://docs.ansible.com/ansible/latest/collections/community/hashi_vault/index.html) collection.
 

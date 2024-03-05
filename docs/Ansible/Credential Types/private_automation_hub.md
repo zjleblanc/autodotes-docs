@@ -1,7 +1,7 @@
 ---
 title: Private Automation Hub
 ---
-# Private Automation Hub <img src="/icons/ansible.png" class="credential-type-icon"> 
+# Private Automation Hub <img src="/icons/ansible.png" class="title-icon"> 
 
 The Private Automation Hub Credential configuration below is compatible with all [infra.ah_configuration](https://galaxy.ansible.com/ui/repo/published/infra/ah_configuration/) modules.
 

@@ -21,11 +21,18 @@ div.search-results {
     margin-top: 16px;
 }
 
-img.credential-type-icon {
+img.title-icon {
     height: 1em; 
     width: auto;
     margin-left: 0.15em;
     padding-bottom: .2em;
+}
+
+.rst-content .section ol li > img.list-item-icon {
+    height: 1em; 
+    width: auto;
+    margin-left: 0.15em;
+    margin-bottom: 0.15em;
 }
 
 /* COLOR THEMING */
@@ -87,4 +94,14 @@ details.seealso.coll-plugin-details table.docutils:not(.field-list) tr:nth-child
 
 details.seealso.coll-plugin-details table.docutils:not(.field-list) tr:nth-child(odd) td {
     background: rgb(240, 240, 240);
+}
+
+/* TABLE THEMING */
+div.pre-table-wrap-text + .wy-table-responsive table td,
+div.pre-table-wrap-text + .wy-table-responsive table th {
+    white-space: normal !important;
+}
+
+div .pre-table-wrap-text + .wy-table-responsive {
+    overflow : visible !important;
 }

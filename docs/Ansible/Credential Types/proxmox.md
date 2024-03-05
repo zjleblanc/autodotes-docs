@@ -1,7 +1,7 @@
 ---
 title: Proxmox VE
 ---
-# Proxmox VE <img src="/icons/proxmox.png" class="credential-type-icon">
+# Proxmox VE <img src="/icons/proxmox.png" class="title-icon">
 
 The Proxmox VE Credential configuration below is compatible with all [community.general.proxmox*](https://docs.ansible.com/ansible/latest/collections/community/general/index.html) modules.
 

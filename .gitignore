@@ -1,5 +1,8 @@
 .venv/
+.vscode/
 site/
 
 ansible.cfg
 inventory.ini
+
+**/.DS_Store
