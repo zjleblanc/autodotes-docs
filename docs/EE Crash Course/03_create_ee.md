@@ -3,13 +3,7 @@ title: "Part 2: Create an EE"
 ---
 # Part 2: Create an EE <img src="/icons/ee.svg" class="title-icon">
 
-## Video Tutorial
-
-_Coming soon!_ 📺
-
-## Step-by-Step Tutorial
-
-### ansible-builder
+## ansible-builder
 
 After completing [Part 1](./02_create_definition_file.md), your working directory should look like this:
 
@@ -35,7 +29,7 @@ To pull the base image, you will need to authenticate to registry.redhat.io with
 Now let's run ansible-builder:<br>
 `ansible-builder build --tag ee-crash-course:latest --tag ee-crash-course:v1`
 
-### Push to Automation Hub Registry
+## Push to Automation Hub Registry
 
 Once builder is complete, we should have a fully-functional execution environment image on our build host:
 
@@ -65,7 +59,7 @@ Navigate to the Execution Environment in your Private Automation Hub:
 
 ![Private Automation Hub Execution Environment](/img/ee/ee_pah_details.png)
 
-### Create Reference in Controller
+## Create Reference in Controller
 
 Almost there - we need to create the Execution Environment resource in our Controller instance which points to the image hosted in our Private Automation Hub container registry. 
 
@@ -83,7 +77,7 @@ In your Controller instance, navigate to **Administration > Execution Environmen
 | Organization | **[Optional]** to limit availability of the Execution Environment |
 | Registry Credential | Select your `Automation Hub Container Registry` Credential |
 
-### Celebrate 🥳
+## Celebrate 🥳
 
 Congrats, you have successfully built your first Execution Environment! If you used the provided definition file, then you might be wondering what all you can do with an EE that only has the [ansible.controller](https://console.redhat.com/ansible/automation-hub/repo/published/ansible/controller/) collection. 
 

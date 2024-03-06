@@ -3,13 +3,7 @@ title: "Part 1: Create Definition File"
 ---
 # Part 1: Create Definition File <img src="/icons/ee.svg" class="title-icon">
 
-## Video Tutorial
-
-_Coming soon!_ 📺
-
-## Step-by-Step Tutorial
-
-### Setup the Environment
+## Setup the Environment
 
 I recommend using a dedicated RHEL build server for this process. Doing so, you will be better setup for a completely automated process in the future using Ansible. Below are the requirements:
 
@@ -21,7 +15,7 @@ I recommend using a dedicated RHEL build server for this process. Doing so, you 
 | ansible-builder | `python3.9 -m pip install ansible-builder>=3.0.0` | Minimum required library version for ansible-builder schema version 3 |
 | ansible-navigator | `python3.8 -m pip install ansible-navigator --user`<br>`echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.profile` | _[Optional]_ |
 
-### Setup build directory
+## Setup build directory
 
 ```bash
 BUILD_DIR="~/ansible-execution-env"
@@ -33,7 +27,7 @@ mkdir $BUILD_DIR/files
 touch $BUILD_DIR/files/ansible.cfg
 ```
 
-### Create the definition file
+## Create the definition file
 
 *I won't be covering every possible configuration option, but I will hit on the common options used by customers I have supported. View the full schema [here](https://ansible.readthedocs.io/projects/builder/en/stable/definition/).*
 
@@ -82,7 +76,7 @@ additional_build_steps:
 | \[4\] | Additional files to inject and use in the build context. For example, you may want to setup an ansible.cfg, manage custom certificates, or add a Kerberos configuration. |
 | \[5\] | The actual step to leverage an injected file. In this case, we are copying our custom `ansible.cfg` before the galaxy stage. Other build hooks are exposed (view [here](https://ansible.readthedocs.io/projects/builder/en/latest/definition/#additional-build-steps)). |
 
-### Create an Ansible config file
+## Create an Ansible config file
 
 Before you get started, navigate to your private Automation Hub and load an API token. This will be used in place of `<PRIVATE_AUTOMATION_HUB_TOKEN>` in the example config file below.
 
@@ -135,6 +129,6 @@ token=<PRIVATE_AUTOMATION_HUB_TOKEN>
 | redhat_published | This server config is commented out because you should be mirroring Red Hat's server via `pah_rh_certified`. However, if you are simply testing something out and have easier access to console.redhat.com than a private automation hub, then this may come in handy. Generate a token for Red Hat's repository [here](https://console.redhat.com/ansible/automation-hub/token). |
 | release_galaxy | This server config is commented out because mirroring a subset of public Galaxy content via `pah_community`. As you can see, this config has no token - useful for learning, but **not recommended** for use in production. |
 
-### Let it Rip
+## Let it Rip
 
 Congrats, you are ready to run **ansible-builder**! Move on to Part 2 [➡️](./03_create_ee.md)

@@ -18,18 +18,21 @@ fields:
     type: string
     label: Password
     secret: true
+  - id: pah_token
+    type: string
+    label: Token
+    secret: true
 required:
   - pah_host
-  - pah_username
-  - pah_password
 ```
 
 ## Injector Configuration
 ```yaml
 env:
-  AH_HOST: '{{ pah_host }}'
-  AH_PASSWORD: '{{ pah_password }}'
-  AH_USERNAME: '{{ pah_username }}'
+  PAH_HOST: '{{ pah_host }}'
+  PAH_USERNAME: '{{ pah_username }}'
+  PAH_PASSWORD: '{{ pah_password }}'
+  PAH_TOKEN: '{{ pah_password }}'
 ```
 
 ## Deploy with Controller Configuration
@@ -55,13 +58,16 @@ env:
               type: string
               label: Password
               secret: true
+            - id: pah_token
+              type: string
+              label: Token
+              secret: true
           required:
             - pah_host
-            - pah_username
-            - pah_password
         injectors:
           env:
-            AH_HOST: !unsafe "{{ pah_host }}"
-            AH_PASSWORD: !unsafe "{{ pah_password }}"
-            AH_USERNAME: !unsafe "{{ pah_username }}"
+            PAH_HOST: !unsafe "{{ pah_host }}"
+            PAH_USERNAME: !unsafe "{{ pah_username }}"
+            PAH_PASSWORD: !unsafe "{{ pah_password }}"
+            PAH_TOKEN: !unsafe "{{ pah_token }}"
 ```

@@ -2,9 +2,7 @@ site_name: Autodotes Knowledge Base
 site_url: https://docs.autodotes.com/
 site_description: Autodotes knowledge base articles
 site_author: Zachary LeBlanc
-google_analytics: 
-  - G-XLSCXM0CHK
-  - docs.autodotes.com
+
 theme: 
   name: readthedocs
   custom_dir: autodotes
