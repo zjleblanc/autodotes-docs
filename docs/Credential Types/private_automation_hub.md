@@ -33,6 +33,10 @@ env:
   PAH_USERNAME: '{{ pah_username }}'
   PAH_PASSWORD: '{{ pah_password }}'
   PAH_TOKEN: '{{ pah_password }}'
+  AH_HOST: '{{ pah_host }}'
+  AH_USERNAME: '{{ pah_username }}'
+  AH_PASSWORD: '{{ pah_password }}'
+  AH_TOKEN: '{{ pah_password }}'
 ```
 
 ## Deploy with Controller Configuration
@@ -70,4 +74,8 @@ env:
             PAH_USERNAME: !unsafe "{{ pah_username }}"
             PAH_PASSWORD: !unsafe "{{ pah_password }}"
             PAH_TOKEN: !unsafe "{{ pah_token }}"
+            AH_HOST: !unsafe "{{ pah_host }}"
+            AH_USERNAME: !unsafe "{{ pah_username }}"
+            AH_PASSWORD: !unsafe "{{ pah_password }}"
+            AH_TOKEN: !unsafe "{{ pah_token }}"
 ```
