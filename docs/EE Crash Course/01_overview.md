@@ -3,7 +3,7 @@ title: Overview
 ---
 # Execution Environments Crash Course <img src="/icons/ee.svg" class="title-icon"> 
 
-Execution Environments (EEs) are a critical piece of Ansible Automation Platform (AAP) operations. For organizations to take full advantage of the Red Hat supported Ansible ecosystem, they often find themselves meeding to build a custom execution environment. This crash course is intended to help AAP maintainers and developers get up to speed with EEs so they can establish a minimal, but sufficient environment for automation and focus on writing playbooks.
+Execution Environments (EEs) are a critical piece of Ansible Automation Platform (AAP) operations. For organizations to take full advantage of the Red Hat supported Ansible ecosystem, they often find themselves needing to build a custom execution environment. This crash course is intended to help AAP maintainers and developers get up to speed with EEs so they can establish a minimal, but sufficient environment for automation and focus on writing playbooks.
 
 ## Step-by-Step Tutorial
 

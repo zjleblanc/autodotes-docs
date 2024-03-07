@@ -13,7 +13,7 @@ I recommend using a dedicated RHEL build server for this process. Doing so, you 
 | python3.9 | `dnf install python39` | Minimum required python version for ansible-builder version 3 |
 | pip | `dnf install python39-pip` | |
 | ansible-builder | `python3.9 -m pip install ansible-builder>=3.0.0` | Minimum required library version for ansible-builder schema version 3 |
-| ansible-navigator | `python3.8 -m pip install ansible-navigator --user`<br>`echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.profile` | _[Optional]_ |
+| ansible-navigator | `python3.9 -m pip install ansible-navigator --user`<br>`echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.profile` | _[Optional]_ |
 
 ## Setup build directory
 
