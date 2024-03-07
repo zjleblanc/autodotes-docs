@@ -49,7 +49,7 @@ env:
   vars:
     controller_credential_types:
       - name: Private Automation Hub Credential
-        description: Private Automation Hub credential for use with servicenow.itsm collection
+        description: Private Automation Hub credential for use with infra.ah_configuration collection
         inputs:
           fields:
             - id: pah_host
