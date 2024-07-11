@@ -25,10 +25,16 @@ fields:
     type: string
     label: ServiceNow Client Secret
     secret: true
+  - id: snow_access_token
+    type: string
+    label: ServiceNow Access Token
+    secret: true
+  - id: snow_timeout
+    type: string
+    label: ServiceNow Timeout
+    help_text: Timeout in seconds for the connection with the ServiceNow instance.
 required:
   - snow_host
-  - snow_user
-  - snow_password
 ```
 
 ## Injector Configuration
@@ -39,6 +45,8 @@ env:
   SN_USERNAME: '{{ snow_user }}'
   SN_CLIENT_ID: '{{ snow_client_id }}'
   SN_CLIENT_SECRET: '{{ snow_client_secret }}'
+  SN_ACCESS_TOKEN: '{{ snow_access_token }}'
+  SN_TIMEOUT: '{{ snow_timeout }}'
 ```
 
 ## Deploy with Controller Configuration
@@ -71,10 +79,16 @@ env:
               type: string
               label: ServiceNow Client Secret
               secret: true
+            - id: snow_access_token
+              type: string
+              label: ServiceNow Access Token
+              secret: true
+            - id: snow_timeout
+              type: string
+              label: ServiceNow Timeout
+              help_text: Timeout in seconds for the connection with the ServiceNow instance.
           required:
             - snow_host
-            - snow_user
-            - snow_password
         injectors:
           env:
             SN_HOST: !unsafe "{{ snow_host }}"
@@ -82,4 +96,6 @@ env:
             SN_USERNAME: !unsafe "{{ snow_user }}"
             SN_CLIENT_ID: !unsafe "{{ snow_client_id }}"
             SN_CLIENT_SECRET: !unsafe "{{ snow_client_secret }}"
+            SN_ACCESS_TOKEN: !unsafe "{{ snow_access_token }}"
+            SN_TIMEOUT: !unsafe "{{ snow_timeout }}"
 ```

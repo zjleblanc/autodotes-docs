@@ -16,10 +16,10 @@ Learn how Event-Driven Ansible integrates with observability solutions to delive
 <div class="pre-table-wrap-text"></div>
 | Type | Link | Description |
 | --- | --- | --- |
-| Rulebook | [Dynatrace Problems](https://github.com/zjleblanc/ansible-network-mgmt/tree/master/summit-connect) | Repository containing source code for the Summit Connect demos |
-| Playbook  | [Create ServiceNow Incident](https://github.com/zjleblanc/ansible-network-configs/tree/master) | Repository containing the backups using Ansible's common data model, as well as golden configs for the configuration-as-code use case |
-| Playbook  | [Expand EC2 Disk](https://github.com/zjleblanc/ansible-network-mgmt/blob/master/summit-connect/git_backup_restore.md) | Documentation for the first demo of the git configuration backup and restore process |
-| Playbook  | [Update ServiceNow Incident](https://github.com/zjleblanc/ansible-network-mgmt/blob/master/summit-connect/config_as_code.md) | Documentation for the second demo of automated pipelines to deploy configuration on completion of a pull request |
+| Rulebook | [Dynatrace Problems](https://github.com/zjleblanc/ansible-eda-demos/blob/master/rulebooks/dynatrace_problems.yml) | Repository containing source code for the Summit Connect demos |
+| Playbook  | [Create ServiceNow Incident](https://github.com/zjleblanc/ansible-cloud-mgmt/blob/master/playbooks/snow/create_incident.yml) | Repository containing the backups using Ansible's common data model, as well as golden configs for the configuration-as-code use case |
+| Playbook  | [Expand EC2 Disk](https://github.com/zjleblanc/ansible-cloud-mgmt/blob/master/playbooks/aws/add_disk_space.yml) | Documentation for the first demo of the git configuration backup and restore process |
+| Playbook  | [Update ServiceNow Incident](https://github.com/zjleblanc/ansible-cloud-mgmt/blob/master/playbooks/snow/update_incident.yml) | Documentation for the second demo of automated pipelines to deploy configuration on completion of a pull request |
 | Collection  | [servicenow.itsm](https://github.com/ansible-collections/servicenow.itsm) | The Ansible Collection for ServiceNow IT Service Management (ITSM) includes a variety of Ansible content to help automate the management of ServiceNow IT Service Management. |
 | Collection | [dynatrace.event_driven_ansible](https://github.com/Dynatrace/Dynatrace-EventDrivenAnsible) | This Event source plugin from Dynatrace captures all problems from your Dynatrace tenant and in conjunction with Ansible EDA rulebooks helps to enable auto-remediation in your environment.|
 
